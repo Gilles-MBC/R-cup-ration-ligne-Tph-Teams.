@@ -15,9 +15,7 @@ $mappingOU = @{
     "Agence Grands-Comptes" = "Grands Comptes"
     "Agence Centrale d'achats" = "Centrale d'achats"
     "Agence Ecole du Capital Toi(t)"    = "Ecole du Capital Toi(t)"
-   
-    # Ajoutez autant de lignes que nécessaire
-}
+   }
 # --------------------------------------------
 
 # 2. Connexion aux services
@@ -90,4 +88,5 @@ if ($results) {
     $results | Export-Excel -Path $nomFichier -AutoSize -TableName "Inventaire" -WorksheetName "Telephonie" -Show
     
     Write-Host "Export terminé avec succès ! Fichier généré : $nomFichier" -ForegroundColor Green
+
 }
